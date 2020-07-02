@@ -8,7 +8,8 @@
 	
 	// 페이징, 조회수 처리 등 코드 간소화를 위해 사용할 함수
 	function mq($sql){
-		global $db;
+        global $db;
+        mysqli_set_charset($db,'utf8');
 		return $db->query($sql);
 	}
 ?>

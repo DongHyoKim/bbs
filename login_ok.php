@@ -2,9 +2,10 @@
     $id   = $_POST['id'];
     $pass = $_POST['pass']; 
     
+
     $con = mysqli_connect("localhost", "root", "", "bbs");
     $sql = "SELECT * FROM user WHERE id='$id'";
-
+    mysqli_set_charset($con,'utf8');
     $result = mysqli_query($con, $sql);
 
     $num_match = mysqli_num_rows($result);

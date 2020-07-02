@@ -20,6 +20,7 @@
                     alert("아이디를 입력하세요!");    
                     $("#id").focus();
                     return;
+                    //return false;
                 }
                 if (!$("#pass").val()) {
                     alert("비밀번호를 입력하세요!");    
@@ -291,7 +292,9 @@
                             }
                         </script>						
                     </div>
-					
+                        <!--
+                        <input type="submit" value="회원가입">
+                        <button onclick="check_input()">회원가입</button> -->
 						<span class="btn btn-primary form-control" onclick="check_input()">회원가입</span>&nbsp;
                         <span class="btn btn-primary form-control" onclick="reset_form()">초기화</span>
                         
